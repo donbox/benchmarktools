@@ -4,13 +4,13 @@
 #
 # The logfile will be named based on the moment you invoke this script.
 # The filename will be
-#    uptimelog-<year>-<month>-<day>-<hr>-<min>-<sec>.txt 
+#    battlog-<year>-<month>-<day>-<hr>-<min>-<sec>.csv
 # in the current directory.
 
 
 interval=10
 currenttime=$(date +"%Y-%m-%d-%H-%M-%S")
-filename='uptimelog-'${currenttime}'.txt'
+filename='battlog-'${currenttime}'.csv'
 echo Writing to $filename
 echo 'Time,Percentage' > $filename
 
